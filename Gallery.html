@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery | Green Meadow Foundation</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .gallery-hero {
+      background: url('plantiii.jfif') center/cover no-repeat;
+      padding: 100px 20px;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+    .gallery-hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(15, 62, 46, 0.6);
+      z-index: 0;
+    }
+    .gallery-hero h1 {
+      position: relative;
+      z-index: 1;
+      font-size: 42px;
+      margin: 0;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 16px;
+      margin-top: 20px;
+    }
+    .gallery-grid img, 
+    .gallery-grid video {
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+    .gallery-grid img:hover, 
+    .gallery-grid video:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      background: #0e2e23;
+      color: #d6efe4;
+      padding: 24px 0;
+      text-align: center;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="nav">
+    <div class="container nav-row">
+      <a href="index.html" class="brand">
+        <div class="brand-badge">🌱</div>
+        Green Meadow Foundation 
+      </a>
+      <div class="menu">
+        <a href="index.html#about">About Us</a>
+        <a href="index.html#vision">Vision</a>
+        <a href="index.html#mission">Mission</a>
+        <a href="index.html#objective">Objective</a>
+        <a href="index.html#programs">Programs</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="index.html#partners">Partners</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Banner -->
+  <section class="gallery-hero">
+    <h1>Our Gallery</h1>
+  </section>
+
+  <!-- Image Gallery -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">Photo Memories</h2>
+      <p class="section-sub">Capturing our plantation drives, awareness walks, and community events.</p>
+
+      <div class="gallery-grid">
+        <img src="gallery/img1.jpg" alt="Tree plantation drive" onerror="this.src='https://via.placeholder.com/300x200?text=Image+1'">
+        <img src="gallery/img2.jpg" alt="Health camp" onerror="this.src='https://via.placeholder.com/300x200?text=Image+2'">
+        <img src="gallery/img3.jpg" alt="Volunteers at work" onerror="this.src='https://via.placeholder.com/300x200?text=Image+3'">
+        <img src="gallery/img4.jpg" alt="Community awareness session" onerror="this.src='https://via.placeholder.com/300x200?text=Image+4'">
+        <img src="gallery/img5.jpg" alt="School program" onerror="this.src='https://via.placeholder.com/300x200?text=Image+5'">
+        <img src="gallery/img6.jpg" alt="Eco-tourism event" onerror="this.src='https://via.placeholder.com/300x200?text=Image+6'">
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Gallery -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">Video Highlights</h2>
+      <p class="section-sub">Watch moments from our projects and awareness campaigns.</p>
+
+      <div class="gallery-grid">
+        <!-- Local mp4 -->
+        <video controls>
+          <source src="gallery/video1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+        <video controls>
+          <source src="gallery/video2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+        <!-- Youtube Embed -->
+    <iframe width="100%" height="220" 
+  src="https://www.youtube.com/embed/6kO5X_6plCM" 
+  title="YouTube video player" frameborder="0" allowfullscreen 
+  style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+</iframe>
+
+<iframe width="100%" height="220" 
+  src="https://www.youtube.com/embed/6kO5X_6plCM" 
+  title="YouTube video player" frameborder="0" allowfullscreen 
+  style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+</iframe>
+
+      
+    <!-- Watch More Button -->
+    <div style="text-align:center; margin-top:25px;">
+      <a href="https://www.youtube.com/@greenmeadowfoundation7321" target="_blank" 
+         class="btn btn-primary" 
+         style="padding:10px 24px; background:#0e2e23; color:white; border-radius:8px; text-decoration:none; font-weight:600; transition:0.3s;">
+        🎥 Watch More
+      </a>
+    </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Green Meadow Foundation. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
